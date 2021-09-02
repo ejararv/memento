@@ -456,3 +456,188 @@ const sum = (array) => {
 }
 
 log(sum(arr))
+// function sum (arr, x) {
+
+
+//   for(let i = 0; i < arr.length; i++ ){
+//       for(let j = i + 1; j < arr.length; j++){ //?
+//        return  arr[i] + arr[j] === x ? true : false  //?
+//        }
+      
+//   } //?
+
+
+// }
+
+// console.log(sum ([10, 22,3,7,5,78], 17)) // true
+// console.log(sum ([10, 22,3,7,5,78], 10)) // false
+
+
+// function sumAllNums(x){
+//     let arr = [...x.toString()]
+//     let sum = 0
+
+//     for(let i = 0; i < arr.length;i++){
+//          sum += Number(arr[i])
+//     }
+//     return sum
+//     // for (let i = 0; i < nums.length; i++){
+//     //     return sum += x[i]
+//     // }
+
+// }
+
+// console.log(sumAllNums(123))
+// console.log(sumAllNums(9342975))
+// console.log(sumAllNums(1))
+
+// function func(n){
+//     let count = n
+//     if(n !== undefined){
+//         return function sum(x) {
+//             count += x
+//             return sum
+//         }
+//     }else {
+//         return 0
+//     }
+// }
+
+
+// const obj1 = {
+//     'H' : [1],
+//     'e' : [2],
+//     'l' : [3, 4, 10],
+//     'o' : [5, 8],
+//     ' ' : [6],
+//     'W' : [7],
+//     'r' : [9],
+//     'd' : [11]
+// }
+// function say(n){
+//     const arr = []
+//     for(let item of Object.entries(n)){
+//         arr.push(item[Object.values(obj1)])
+//     }
+    
+//         console.log(arr)
+// }
+
+
+
+
+// console.log(say(obj1))
+
+
+
+
+
+// function sumTwoSmallestNumbers(numbers) {  
+//     //Code here
+//     let res = numbers.splice(numbers.indexOf(Math.min(...numbers)) , 1).join('') + numbers.splice(numbers.indexOf(Math.min(...numbers)) , 1).join('') 
+
+//     return res
+// }
+
+//   console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]))
+
+// function reverseWords(str) {
+//     return str.split(' ').map(i => i.split('').reverse().join('')).join(' ')
+//   }
+
+//   console.log(reverseWords('Hello World.'))
+
+
+//   const sum = (w) => {
+ 
+
+//   }
+
+// function descendingOrder(n){
+//     return (n + '').split('').sort( (a, b) => a - b).reverse().join('')
+//   }
+
+//   console.log(descendingOrder(1231456789))
+
+// function highAndLow(numbers){
+//   let arr = numbers.split(' ')
+//   return `${Math.min(...arr)} ${Math.max(...arr)}`
+// }
+
+// console.log(highAndLow("1 2 -3 4 5"));
+
+// function disemvowel(str) {
+//     const vowels = ['a','e','i','o','y','u']
+//     const res = [] 
+//     for(let i = 0; i < str.lentgh; i++){
+//       for(let j = 0; j <vowels.length; j++){
+//         while(str[i] !== str[j]){
+//           res.push(str[i]) 
+//         }
+//       }
+      
+//     }
+//     return res
+   
+//   }
+
+//   console.log(disemvowel('Hello world'))
+
+// A = 10;
+// B = '10';
+// // C = (A == B);
+// var qpt = "Quality Point Technologies";
+// var result = qpt.split(" ");
+// document.write(result);
+
+// const str = 'QLGNAEKIRLRNGEAE'
+
+// function matrix(mat, word){
+    
+//     const id = []
+//     const wordLetters = word.toLowerCase().split('')
+//     mat = mat.toLowerCase().split('')
+//     const result = []
+//     let counter = 0
+//     const matIndex = mat.length ** (1/2)
+//         wordLetters.map(item => {
+//               counter++
+//             return item === mat.find((elem, index) => elem === item ? id.push( index) : false)
+//         }) 
+//         id.map(item => {
+//             counter++
+//             if(item <= matIndex){
+//                 result.push([0, item])
+//                }else {
+//                 let columns = 0
+//                 item -= matIndex
+//                 columns++
+//                 result.push([columns, item]) 
+//                }
+//         })
+//         console.log("Iterations = " + counter +  "\nKoordinates for word : " + word)
+//          return  result 
+        
+// }
+
+// console.log(matrix(str, 'king'))
+
+// const number = (array) => {
+//     //your awesome code here
+//    return array.map((v, i) => `${i + 1}: ${v}`)
+//   }
+
+//   console.log(number(['a', 'b', 'c']))
+
+// function dup(s) {
+  
+    
+//     return s.map(word => {
+//        return word.split('').filter((val, index, arr) => {
+//            return val !== arr[index + 1]
+//        }).join('')
+//      })
+//   };
+
+
+//   console.log(dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]))
