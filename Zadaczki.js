@@ -641,3 +641,108 @@ log(sum(arr))
 
 
 //   console.log(dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]))
+// function createPhoneNumber(numbers){
+
+//     numbers.unshift("(");
+//     numbers.splice(4, 0, ")", " ");
+//     numbers.splice(9, 0, "-");
+//     return numbers.join("");
+    
+  
+// }
+
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+
+// function getCount(str) {
+//     var vowelsCount = 0;
+//     const vowels = ['a','e','i', 'o']
+//     for(let i = 0; i < str.length; i++){
+//       if(vowels.includes(str[i]))
+//         vowelsCount++
+//     }
+//     // enter your majic here
+    
+//     return vowelsCount;
+//   }
+// function spinWords(string){
+//     return string.split(' ').map(word => word.length < 5 ? word : word.split('').reverse().join('')).join(' ')
+//   }
+
+// log(spinWords("Hey fellow warriors"))
+
+
+// function incrementString (strng) {
+//     const num = []
+//     for(let i = 0; i < strng.length; i++){
+//         if(Number.parseInt(strng[i])){
+//             num.push(strng[i])
+//         }else{
+//            return strng[i]
+//         }
+//     }
+
+//     return num
+    
+    
+//   }
+//   console.log(incrementString("foobar000"))
+
+// const towerBuilder = length => Array.from({length}, (_, i, w = ' '.repeat(length-i-1)) => w + '*'.repeat(2*i+1) + w)
+//   console.log(towerBuilder(5))
+
+
+// function humanReadable(seconds) {
+//     var hours = seconds / 3600, minutes = seconds / 60 % 60, newSeconds = seconds %  60 ;
+//     return formatDate(hours) +':' + formatDate(minutes)+':'+formatDate(newSeconds)
+//   }
+  
+//   function formatDate(n){
+//     var number = Number.parseInt(n)
+//     return number > 9? number : '0'+number;
+//   }
+
+//   console.log(humanReadable(60))
+
+// function firstNonRepeatingLetter(s) {
+//     // Add your code here
+//     let res = []
+//     sLetters =  s.split('')
+    
+//   }
+
+//   console.log(firstNonRepeatingLetter('memento'))
+
+
+// const fibonaci = (n) => {
+//     return n == 0 || n == 1 ? n : (fibonaci(n - 1) + fibonaci(n - 2))
+
+// }
+
+// console.log(fibonaci(70))
+
+
+// function check(arr, n) {
+
+//   for(let i = 0; i < arr.length; i++){
+//     for(let j = i + 1; j < arr.length; j++){
+//      if(arr[j] + arr[i] === n){
+//          return true
+//      }
+     
+//     }
+//   } return false
+
+// }
+
+// console.log(check([11,5,6,1], 17))
+// console.log(check([11,5,6,1], 22))
+
+function domainName(str) {
+    str = str.toString().replace('https://', '').replace('http://', '').replace('www.', '');
+    return str.split('.')[0]
+
+}
+
+console.log(domainName("http://github.com/carbonfive/raygun"))
+console.log(domainName("http://www.zombie-bites.com"))
+console.log(domainName("https://www.cnet.com"))
