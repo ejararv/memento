@@ -746,3 +746,124 @@ function domainName(str) {
 console.log(domainName("http://github.com/carbonfive/raygun"))
 console.log(domainName("http://www.zombie-bites.com"))
 console.log(domainName("https://www.cnet.com"))
+
+
+// function usdcny(usd) {
+//     return usd > 0 ? `${usd * 6.75} `+ 'Chinese Yuan' : 0
+//   }
+
+//   console.log(usdcny(23))
+
+// let calculator = (() => {
+//         let data = { number: 0};
+//          
+//         return {
+//             sum: function(n){
+//                 data.number += n;
+//             },
+//             subtract: function(n){
+//                 data.number -= n;
+//             },
+//             display: function(){
+//                 console.log("Result: ", data.number);
+//             }
+//         }
+//     })();
+//     calculator.sum(10);
+//     calculator.sum(3);
+//     calculator.display();   // Result: 13
+//     calculator.subtract(4);
+//     calculator.display();   // Result: 9
+
+// let arr = [1,6,3,4,5]
+
+// const sum = (a) => {
+//     let sum = 0
+//     return a.sort((a, b) => b - a)
+// }
+
+// console.log(sum(arr))
+
+// function strict() {
+//     // Строгий режим на уровне функции
+//     "use strict";
+//     function nested() { return "И я тоже!"; }
+//     return "Привет! Я функция в строгом режиме! " + nested();
+//   }
+//   function notStrict() { return "Я не strict."; }
+
+//   console.log(strict())
+//   console.log(notStrict())
+
+// function likes(names) {
+//     // TODO
+//     let result = []
+//     for(let i = 0; i < names.length; i++){
+//       return names.length === 1 ? names[i] + ' likes this'  : (names.length > 1 && names.length < 4  ? names[i] + names[i + 1] + ' and 2 others like this' :  ) 
+//       //'no one likes this'
+//       // 
+//     }
+//   }
+
+
+//   console.log(likes(['Max', 'John', 'Mark']))
+
+// let names = ['Vasia Pupkin', 'Vladimir Putin']
+
+// let sortNames = (n) => {
+//    let res = []
+//   n.map((element, id) => {
+//       element = element.split(' ')
+//    res.push(`name: ${element[id]}, Lastname ${element[id + 1]} `])   
+//   });
+
+//   return res.join('')
+  
+// }
+
+// console.log(sortNames(names))
+
+// function makeWorker() {
+//     let name = "Pete";
+  
+//     return function() {
+//       console.log(name);
+//     };
+//   }
+  
+//   let name = "John";
+  
+//   // create a function
+//   let work = makeWorker();
+  
+//   // call it
+//   console.log(work()); 
+
+// function hashTags (str) {
+//   return str.length > 140 || str === '' ? false :
+//     '#' + str.split(' ').map(capitalize).join('');
+// }
+
+// function capitalize(str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// }
+// console.log(hashTags('Hello World ! '))
+// console.log(hashTags(''))
+// console.log(hashTags('Hello World man ! '))
+
+
+// function validParentheses(parens){
+//   //TODO 
+//   let counter = 0
+  
+//   for(let i = 0; i < parens.length; i++){
+//     parens[i] == '('  ? counter++ : counter--
+    
+//   }
+//   return counter < 0  ? false : true
+// }
+
+// console.log(validParentheses("({}))"))
+// console.log(validParentheses("()"))
+
+
