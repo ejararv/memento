@@ -866,4 +866,41 @@ console.log(domainName("https://www.cnet.com"))
 // console.log(validParentheses("({}))"))
 // console.log(validParentheses("()"))
 
+// var moveZeros = function (arr) {
+//   // TODO: Program me
+//   return arr.sort((a, b) => {
+//     return b === 0 ? -1 : 1
+//   })
+ 
+// }
+// console.log(moveZeros(moveZeros([1,2,0,1,0,1,0,3,0,1])))
+
+// function sumSqrt(arr){
+//   let sum = 0
+  
+//   return arr.filter(i => {
+//      return i % 2 === 0 && Math.sqrt(i) % 1 === 0 ? i : false
+//    }).reduce((a,b) => { 
+//      return a + Math.sqrt(b)
+//    }, 0)
+   
+// }
+
+// console.log(sumSqrt([3, 4, 16, 3, 2, 7]))
+
+// const arr = [
+//   {id: 13, val: 5},
+//   {id: 14, val: 7},
+//   {id: 15, val: -5},
+//   {id: 16, val: 3},
+//   {id: 17, val: -2},
+// ]
+
+// function sortArrWithObject(a){
+//   return a.filter(i => i.val > 0).sort((a,b) => {
+//     return a.val - b.val
+//   })
+// }
+
+// console.log(sortArrWithObject(arr))
 
